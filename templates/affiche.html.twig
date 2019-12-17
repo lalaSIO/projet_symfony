@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+{#premier tempate#}
+    {% block head %}
+
+        <title>{% block title %}{% endblock %} - My Webpage</title>
+    {% endblock %}
+{% block body %}
+
+<h1>{{ title }}</h1>
+<div>
+
+<p>blalvlalvlzlfzelezf</p>
+    <p>blalvlalvlzlfzelezf</p>
+
+</div>
+<ul>
+    {% for c in com %}
+        <li>{{ c }}</li>
+    {% endfor %}
+</ul>
+
+<div id="footer">
+    {% block footer %}
+        &copy; Copyright 2019 by <a href="http://domain.invalid/">you</a>.
+    {% endblock %}
+</div>
+{% endblock %}

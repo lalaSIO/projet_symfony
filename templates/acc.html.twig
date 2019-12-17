@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+{#premier tempate#}
+    {% block head %}
+
+        <title>{% block title %}{% endblock %} - My Webpage</title>
+    {% endblock %}
+
+{% block body %}
+    <div class="wrapper">
+        <div class="top-options">
+            <h1 class="center">Application de planning</h1>
+            <table  width="100%">
+                <tr>
+                    <td width="30%">
+                    </td>
+                   <td>
+                       <a href="../planning/month" ><button class="button2">Planning en vue Mensuel</button><a/>
+                   </td>
+
+                    <td width="30%">
+                    </td>
+                </tr>
+                <tr>
+                    <td width="30%">
+                    </td>
+
+                    <td>
+                       <a href="../planning/week" ><button class="button2">Planning en vue Semaine</button><a/>
+                    </td>
+                    <td width="30%">
+                    </td>
+                </tr>
+                <tr>
+
+                </tr>
+            </table>
+        </div>
+    </div>
+    </div>
+{% endblock %}

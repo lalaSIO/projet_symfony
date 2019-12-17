@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+{#premier tempate#}
+    {% block head %}
+
+        <title>{% block title %}{% endblock %} - My Webpage</title>
+    {% endblock %}
+
+{% block body %}
+    <div class="wrapper">
+        <div class="top-options">
+            <h1 class="center">Ajouter un intervenant</h1>
+
+
+            <form action="intervenant/ajoutProfesseur" method="post" class="center">
+                <fieldset >
+                    <label for="username"></label>
+                    <input type="text" id="name" name="name" placeholder="{{ placeholder_nom }}" />
+                </fieldset>
+                <fieldset>
+                    <label for="prenom"></label>
+                    <input type="text" id="name" name="name" placeholder="{{ placeholder_prenom }}" />
+                </fieldset>
+                <fieldset>
+                    <label for="password"></label>
+                    <input type="password" id="password" name="_password" placeholder="{{ placeholder_mdp }}"/>
+                </fieldset>
+                <fieldset>
+                    <label for="matiere"></label>
+                    <select name="matiere">
+                        <option value="" disabled selected>Selectionner une matière
+                        <option value="agiliter">Agiliter</option>
+                        <option value="developement_java">Dévelopement Java</option>
+                        <option value="developement_mobile">Dévelopement Mobile</option>
+                        <option value="anglais">Anglais</option>
+                    </select>
+                </fieldset>
+
+                <div class="search-data">
+                    <input class="button_submit" type="submit" value="Ajouter">
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,59 @@
+{% extends 'base.html.twig' %}
+{#premier tempate#}
+    {% block head %}
+
+        <title>{% block title %}{% endblock %} - My Webpage</title>
+    {% endblock %}
+
+{% block body %}
+    <h1 class="middle-title">Planning de la Semaine </h1>
+
+    <div class="main-bloc">
+
+        <table width="100%" class="center" border="">
+
+            <tr class="text-center">
+                <th colspan="4" width="45%"height="70px"><a href="week?week={{ numerosemaine -1 }}&year={{ anne }}">PRECEDENT</a></th>
+                <th colspan="4"width="45%"height="70px"><a  href="week?week={{ numerosemaine +1 }}&year={{ anne }}">SUIVANT</a></th>
+            </tr>
+            <tr class="text-center" >
+                <th width="8%"height="70px">HORAIRE</th>
+                <th width="13%"height="70px">Lundi</th>
+                <th width="13%"height="70px">Mardi</th>
+                <th width="13%"height="70px">Mercredi</th>
+                <th width="13%"height="70px">Jeudi</th>
+                <th width="13%"height="70px">Vendredi</th>
+                <th width="12%"height="70px">Samedi</th>
+                <th width="12%"height="70px">Dimanche</th>
+            </tr>
+            <th width="8%"height="70px"</th>
+                    {{ semaine | raw }}
+
+            </tr>
+            <tr class="text-center">
+                <th width="8%"height="70px">8h-12h</th>
+                <th width="13%"height="300px">matin</th>
+                <th width="13%"height="300px">matin</th>
+                <th width="13%"height="300px">matin</th>
+                <th width="13%"height="300px">matin</th>
+                <th width="13%"height="300px">matin</th>
+                <th width="12%"height="300px">matin</th>
+                <th width="12%"height="300px">matin</th>
+            </tr>
+            <tr class="text-center">
+                <th width="8%"height="70px">13h-17h</th>
+                <th width="13%"height="300px">Apre-midi</th>
+                <th width="13%"height="300px">Apre-midi</th>
+                <th width="13%"height="300px">Apre-midi</th>
+                <th width="13%"height="300px">Apre-midi</th>
+                <th width="13%"height="300px">Apre-midi</th>
+                <th width="12%"height="300px">Apre-midi</th>
+                <th width="12%"height="300px">Apre-midi</th>
+            </tr>
+        </table>
+
+
+
+
+    </div>
+{% endblock %}
