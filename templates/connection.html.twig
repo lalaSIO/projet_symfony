@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+{#premier tempate#}
+    {% block head %}
+
+        <title>{% block title %}{% endblock %} - My Webpage</title>
+    {% endblock %}
+
+{% block body %}
+    <div class="wrapper">
+        <div class="top-options">
+            <h1 class="center">Connection</h1>
+
+
+            <form class="center" action="{{ login_check }}" method="post">
+                <fieldset>
+                    <label for="username">  </label>
+                    <input type="text" id="username" name="_username" placeholder="Identifiant" />
+                </fieldset>
+                <fieldset>
+                    <label for="password">  </label>
+                    <input type="password" id="password" name="_password" placeholder="Mot de Passe"/>
+                </fieldset>
+
+                <div class="search-data">
+                    <input class="button_submit" type="submit" value="Login">
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+{% endblock %}

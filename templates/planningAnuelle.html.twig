@@ -1,0 +1,266 @@
+{% extends 'base.html.twig' %}
+{#premier tempate#}
+    {% block head %}
+
+        <title>{% block title %}{% endblock %} - My Webpage</title>
+    {% endblock %}
+
+{% block body %}
+    <h1 class="middle-title">Calendrier Annuel </h1>
+
+    <div  class="center">
+
+
+                    <div  class="wrapper2">
+
+
+                            <table border="1" class="center" width="100%">
+
+                            <tr class="text-center">
+                                <th width="8%"height="70px">septembre</th>
+                                <th width="8%"height="70px">Octobre</th>
+                                <th width="8%"height="70px">Novenbre</th>
+                                <th width="8%"height="70px">Decembre</th>
+                                <th width="8%"height="70px">Janvier</th>
+                                <th width="8%"height="70px">Fevrier</th>
+                                <th width="8%"height="70px">Mars</th>
+                                <th width="8%"height="70px">Avril</th>
+                                <th width="8%"height="70px">Mai</th>
+                                <th width="8%"height="70px">Juin</th>
+                                <th width="8%"height="70px">Juillet</th>
+                                <th width="8%"height="70px">Aout</th>
+                            </tr>
+                            </table>
+
+                          <table border="1" class="center" width="100%">
+
+
+                                <tr class="text-center">
+
+                                    <th width="8%">
+                                        {% for c in calen %}
+                                            {%if c|date('m') == '09'  %}
+                                                <table width="100%" border="1" >
+                                                    <tr>
+                                                        <td >
+                                                            {{  c|date('l') }}
+                                                            {{  c|date('d') }}
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            {% endif %}
+                                        {% endfor %}
+                                        <table width="100%">
+                                            <tr>
+                                                <td transparent-td>
+                                                    &nbsp
+
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                    </th>
+                                    <th width="8%">
+                                        {% for c in calen %}
+                                            {%if c|date('m') == '10'  %}
+                                                <table width="100%" border="1">
+                                                    <tr>
+                                                        <td>
+                                                            {{  c|date('l') }}
+                                                            {{  c|date('d') }}
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            {% endif %}
+                                        {% endfor %}
+                                    </th>
+                                    <th width="8%">
+                                        {% for c in calen %}
+                                            {%if c|date('m') == '11'  %}
+                                                <table width="100%"  border="1">
+                                                    <tr>
+                                                        <td>
+                                                            {{  c|date('l') }}
+                                                            {{  c|date('d') }}
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            {% endif %}
+                                        {% endfor %}
+                                        <table width="100%">
+                                            <tr>
+                                                <td transparent-td>
+                                                    &nbsp
+
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </th>
+                                    <th width="8%">
+                                        {% for c in calen %}
+                                            {%if c|date('m') == '12'  %}
+                                                <table width="100%"  border="1">
+                                                    <tr>
+                                                        <td>
+                                                            {{  c|date('l') }}
+                                                            {{  c|date('d') }}
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            {% endif %}
+                                        {% endfor %}
+                                    </th>
+                                    <th width="8%">
+                                        {% for c in calen %}
+                                            {%if c|date('m') == '01'  %}
+                                                <table width="100%"  border="1">
+                                                    <tr>
+                                                        <td>
+                                                            {{  c|date('l') }}
+                                                            {{  c|date('d') }}
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            {% endif %}
+                                        {% endfor %}
+                                    </th>
+                                    <th width="8%">
+                                        {% for c in calen %}
+                                            {%if c|date('m') == '02'  %}
+                                                <table width="100%"  border="1">
+                                                    <tr>
+                                                        <td>
+                                                            {{  c|date('l') }}
+                                                            {{  c|date('d') }}
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            {% endif %}
+                                        {% endfor %}
+                                        <table width="100%">
+                                            <tr>
+                                                <td transparent-td>
+                                                    &nbsp
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td transparent-td>
+                                                    &nbsp
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </th>
+                                    <th width="8%">
+                                        {% for c in calen %}
+                                            {%if c|date('m') == '03'  %}
+                                                <table width="100%"  border="1">
+                                                    <tr>
+                                                        <td>
+                                                            {{  c|date('l') }}
+                                                            {{  c|date('d') }}
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            {% endif %}
+                                        {% endfor %}
+                                    </th>
+                                    <th width="8%">
+                                        {% for c in calen %}
+                                            {%if c|date('m') == '04'  %}
+                                              <table width="100%"  border="1">
+                                                  <tr>
+                                                     <td>
+                                                         {{  c|date('l') }}
+                                                         {{  c|date('d') }}
+                                                      </td>
+                                                  </tr>
+                                              </table>
+                                            {% endif %}
+                                        {% endfor %}
+                                        <table width="100%">
+                                            <tr>
+                                                <td transparent-td>
+                                                    &nbsp
+
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </th>
+                                    <th width="8%">
+                                        {% for c in calen %}
+                                            {%if c|date('m') == '05'  %}
+                                                <table width="100%"  border="1">
+                                                    <tr>
+                                                        <td>
+                                                            {{  c|date('l') }}
+                                                            {{  c|date('d') }}
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            {% endif %}
+                                        {% endfor %}
+                                    </th>
+                                    <th width="8%">
+                                        {% for c in calen %}
+                                            {%if c|date('m') == '06'  %}
+                                                <table width="100%"  border="1">
+                                                    <tr>
+                                                        <td>
+                                                            {{  c|date('l') }}
+                                                            {{  c|date('d') }}
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            {% endif %}
+                                        {% endfor %}
+                                        <table width="100%">
+                                            <tr>
+                                                <td transparent-td>
+                                                    &nbsp
+
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </th>
+                                    <th width="8%">
+                                        {% for c in calen %}
+                                            {%if c|date('m') == '07'  %}
+                                                <table width="100%"  border="1">
+                                                    <tr>
+                                                        <td>
+                                                            {{  c|date('l') }}
+                                                            {{  c|date('d') }}
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            {% endif %}
+                                        {% endfor %}
+                                    </th>
+                                    <th width="8%">
+                                        {% for c in calen %}
+                                            {%if c|date('m') == '08'  %}
+                                                <table width="100%"  border="1">
+                                                    <tr>
+                                                        <td>
+                                                            {{  c|date('l') }}
+                                                            {{  c|date('d') }}
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            {% endif %}
+                                        {% endfor %}
+                                    </th>
+
+                                </tr>
+
+
+
+
+
+                            </table>
+
+
+                    </div>
+
+    </div>
+{% endblock %}

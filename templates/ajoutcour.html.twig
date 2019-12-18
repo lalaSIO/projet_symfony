@@ -1,0 +1,54 @@
+{% extends 'base.html.twig' %}
+{#premier tempate#}
+    {% block head %}
+
+        <title>{% block title %}{% endblock %} - My Webpage</title>
+    {% endblock %}
+
+{% block body %}
+    <div class="wrapper">
+        <div class="top-options">
+            <h1 class="center">Ajouter un intervenant</h1>
+
+
+            <form action="../court/ajoutcourt" method="post" class="center">
+                <fieldset >
+                    <label for="moment"></label>
+                    <select name="moment">
+                        <option value="" disabled selected>Selectionner le moment du court
+                        <option value="matin">Matin</option>
+                        <option value="ap_midi">Apres Midi</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <label for="date"></label>
+                    <input type="date" id="name" name="date"  />
+                </fieldset>
+                <fieldset>
+                    <label for="matiere"></label>
+                    <select name="matiere">
+                        <option value="" disabled selected>Selectionner une matière
+                        <option value="Java">Java</option>
+                        <option value="PHP">PHP</option>
+                        <option value="Programmation_système">Programmation_système</option>
+                        <option value="Stecurite_informaique">Stecurite_informaique</option>
+                        <option value="Communication">Communication</option>
+                        <option value="Gestion">Gestion</option>
+                        <option value="Droit_informatique">Droit_informatique</option>
+                        <option value="Anglais">Anglais</option>
+                        <option value="Bases_donnees">Bases_donnees</option>
+                        <option value="Reseau">Reseau</option>
+                        <option value="Authentification">Authentification</option>
+                        <option value="Systeme_Linux_Windows">Systeme_Linux_Windows</option>
+                        <option value="Conduite_de_projet">Conduite_de_projet</option>
+                    </select>
+                </fieldset>
+
+                <div class="search-data">
+                    <input class="button_submit" type="submit" value="Ajouter">
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+{% endblock %}
